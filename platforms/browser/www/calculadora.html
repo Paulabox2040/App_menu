@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Calculadora</h1>
+
+        <form name="calculadora">
+         <input type="text" name="Input"></input><br><br>
+
+        <input id="teclas" type="button" name= "um" value=" 1 " 
+        onClick="calculadora.Input.value +='1'"></input>
+
+        <input id="teclas" type="button" name= "dois" value=" 2 "
+        onClick= "calculadora.Input.value +='2'"></input>
+
+        <input id="teclas" type="button" name= "tres" value=" 3 "
+         onClick= "calculadora.Input.value +='3'"></input> 
+
+        <input id="teclas" type="button" name= "mais" value=" + " 
+         onClick= "calculadora.Input.value +='+'"></input>
+        <br><br>
+        
+        <input id="teclas" type="button" name= "quatro" value=" 4 "
+        onClick= "calculadora.Input.value +='4'"></input> 
+        
+        <input id="teclas" type="button" name= "cinco" value=" 5 "
+         onClick= "calculadora.Input.value +='5'"></input>  
+        
+        <input id="teclas" type="button" name= "seis" value=" 6 " 
+        onClick= "calculadora.Input.value +='6'"></input>
+
+        <input id="teclas" type="button" name= "menos" value=" - "
+        onClick= "calculadora.Input.value +='-'"></input>
+        <br><br>
+        
+        <input id="teclas" type="button" name= "sete" value=" 7 "
+        onClick= "calculadora.Input.value +='7'"></input> 
+
+        <input id="teclas" type="button" name= "oito" value=" 8 " 
+        onClick= " calculadora.Input.value +='8'"></input>
+
+        <input id="teclas" type="button" name= "nove" value=" 9 " 
+        onClick= " calculadora.Input.value +='9'"></input>
+
+        <input id="teclas" type="button" name= "vezes" value=" * " 
+         onClick= " calculadora.Input.value +='*'"></input>
+        <br><br>
+        
+        <input id="teclas" type="button" name="clear" value=" C " 
+        onClick= " calculadora.Input.value =''"></input>
+
+        <input id="teclas" type="button" name="zero" value=" 0 " 
+        onClick=" calculadora.Input.value +='0'"></input>
+
+        <input id="teclas" type="button" name="igual" value=" = " 
+        onClick="calculadora.Input.value=eval(calculadora.Input.value)" ></input>
+
+        <input id="teclas" type="button" name= "barra" value=" / "
+        onClick= " calculadora.Input.value +='/'"></input> 
+        <br><br>
+       
+
+        </form>
+
+    </div>
+
+     <a class="retrocede" href="index.html">
+        <img src="img/seta.png">
+
+        </a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/calcula.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
